@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe tecnico</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="container_one">
+                <div class="row align-items-stretch" style="margin-right: 0px; margin-left: 0px;">
+                    <div class="cont_1 col-md-6 g-0" style="height: 200px;">
+                        <div>
+                            <img src="/img/logo_refrifresh.png" class="img-fluid" alt="Logo Refrifresh" >
+                        </div>
+                    </div>
+                    <div class="cont_1 col-md-6 g-0" style="height: 200px; background-color: gray; color: white;">
+                        <div class="d-flex justify-content-between" style="height: 95px;">
+                            <div class="d-flex align-items-center justify-content-center" style="height: 100px;">
+                                <h4 style="padding: 5px; text-align: center;">Fecha: 20/02/2024</h4>
+                            </div>              
+                            <div class="d-flex align-items-center justify-content-center" style="height: 100px;">
+                                <h4 style="padding: 5px; text-align: center;">Hora: 14:01 p.m.</h4>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between" style="height: 95px;">
+                            <div class="d-flex align-items-center justify-content-center" style="height: 100px;">
+                                <h4 style="padding: 5px; text-align: center;">Informe Técnico</h3>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center" style="height: 100px;">
+                                <h4 style="padding: 5px; text-align: center;"><strong>Nº 000000101</strong></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info container_one d-flex flex-column flex-md-row justify-content-between">
+                    <div class="inf">
+                        <h5>RUC: 20600758854</h5>
+                    </div>
+                    <div class="inf">
+                        <h5>CEL: 946 233 255</h5>
+                    </div>
+                    <div class="inf">
+                        <h5>CORREO: contacto@refrifresh.com</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container_two">
+                <h5>Cliente</h5>
+                <label>Ruc:</label>
+                <input type="text" class="form-control">
+                <label>Nombre comercial:</label>
+                <input type="text" class="form-control">
+                <label>Razón social:</label>
+                <input type="text" class="form-control">
+                <label>Dirección:</label>
+                <input type="text" class="form-control">
+                <label>Distrito:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione distrito</option>
+                    <option value="1">Ate</option>
+                    <option value="2">Lima</option>
+                    <option value="3">Los Olivos</option>
+                  </select>
+            </div>
+            <div class="container_two">
+                <h5>Maquina</h5>
+                <label>Nº Serie</label>
+                <input type="text" class="form-control">
+                <label>Equipo</label>
+                <input type="text" class="form-control">
+                <label>Marca:</label>
+                <input type="text" class="form-control">
+                <label>Modelo:</label>
+                <input type="text" class="form-control">
+                <label>Área/Ubicación:</label>
+                <input type="text" class="form-control">
+                <label>Voltaje:</label>
+                <input type="text" class="form-control">
+                <label>Amperaje:</label>
+                <input type="text" class="form-control">
+                <label>Gas:</label>
+                <input type="text" class="form-control">
+                <label>Potencia:</label>
+                <input type="text" class="form-control">
+                <label>Temperatura:</label>
+                <input type="text" class="form-control">
+                <label>Presión:</label>
+                <input type="text" class="form-control">
+                <label>Otros:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="container_two">
+                <h5>Falla (Estado de la máquina):</h5>
+                <textarea class="form-control" id="myTextarea" rows="4" maxlength="1000" oninput="updateCounter()"></textarea>
+                <small id="charCount" class="text-muted">Caracteres restantes: 1000</small>
+            </div>
+            <div class="container_two">
+                <h5>Observaciones:</h5>
+                <textarea class="form-control" id="myTextareatwo" rows="4" maxlength="1000" oninput="updateCountertwo()"></textarea>
+                <small id="charCounttwo" class="text-muted">Caracteres restantes: 1000</small>
+            </div>
+            <div class="container_two">
+                <h5>Recomendaciones:</h5>
+                <textarea class="form-control" id="myTextareathree" rows="4" maxlength="1000" oninput="updateCounterthree()"></textarea>
+                <small id="charCountthree" class="text-muted">Caracteres restantes: 1000</small>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="container_two">
+                        <div>
+                            <h5>Cliente</h5>
+                                <p>Hotel Resort Paracas</p>
+                                    <img src="/img/Captura de pantalla 2024-02-19 235535.png" class="img-fluid" style="max-height: 200px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container_two">
+                        <div>
+                            <h5>Técnico</h5>
+                                <p>Luis Alfredo Rodriguez Sanchez</p>
+                                    <img src="/img/Captura de pantalla 2024-02-19 235535.png" class="img-fluid" style="max-height: 200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary mx-auto d-block my-3">Registrar</button>
+        </form>
+    </div>
+</body>
+<script src="/js/script.js"></script>
+</html>
